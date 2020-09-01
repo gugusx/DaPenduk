@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Cari"
+        android:id="@+id/action_search"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+    </item>
+
+    <item
+        android:title="Keluar"
+        android:id="@+id/action_logout"
+        android:icon="@drawable/logout"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DaPenduk</string>
+
+    <string name="jk_prompt">Jenis kelamin</string>
+    <string-array name="jk_arrays">
+        <item>Jenis Kelamin</item>
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

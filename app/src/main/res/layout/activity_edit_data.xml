@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditData">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icupdt" />
+
+
+        <EditText
+            android:id="@+id/etNm"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/form_style"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Nama"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true" />
+        <Spinner
+            android:id="@+id/etJk"
+            android:layout_below="@id/etNm"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/form_style"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:entries="@array/jk_arrays"
+            android:prompt="@string/jk_prompt"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/etAlm"
+            android:layout_below="@id/etJk"
+            android:background="@drawable/form_style"
+            android:layout_marginBottom="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Alamat"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/etTpt"
+            android:layout_below="@id/etAlm"
+            android:hint="Tempat lahir"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/form_style"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/etTgl"
+            android:textColor="@color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etTpt"
+            android:layout_centerHorizontal="true"
+            android:hint="Tanggal lahir"
+            android:paddingLeft="20dp"
+            android:background="@drawable/form_style"
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/etPkr"
+            android:layout_below="@id/etTgl"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Pekerjaan"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/form_style"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_below="@id/etPkr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:minWidth="160dp"
+            android:text="Edit Data"
+            android:textColor="#ECE8E8"
+            android:textAllCaps="false"
+            android:background="@drawable/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
